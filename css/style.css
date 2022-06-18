@@ -1,4 +1,30 @@
-* {
-    margin: 0;
-    padding: 0;
+main{
+    margin-top: 56px;
+}
+.navbar{
+    z-index: 1;
+}
+@media all and (min-width: 576px) and (max-width: 767px){
+    .fixedHeight{
+        height: 400px;
+        object-fit: cover;
+    }
+}
+@media all and (min-width: 768px) and (max-width: 991px){
+    .fixedHeight{
+        height: 350px;
+        object-fit: cover;
+    }
+} 
+@media all and (min-width: 992px) and (max-width: 1200px) {
+    .fixedHeight{
+        height: 200px;
+        object-fit: cover;
+    }
+}
+@media all and (min-width: 1201px){
+    .fixedHeight{
+        height: 270px;
+        object-fit: cover;
+    }
 }
