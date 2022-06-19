@@ -1,5 +1,5 @@
 main{
-    margin-top: 56px;
+    margin-top: 70px;
 }
 .navbar{
     z-index: 1;
@@ -25,6 +25,10 @@ main{
 @media all and (min-width: 1201px){
     .fixedHeight{
         height: 270px;
+        object-fit: cover;
+    }
+    video {
+        height: 550px;
         object-fit: cover;
     }
 }
