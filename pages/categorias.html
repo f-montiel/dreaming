@@ -49,7 +49,7 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a
-                                    class="nav-link active"
+                                    class="nav-link"
                                     aria-current="page"
                                     href="../index.html"
                                     >Inicio</a
@@ -80,21 +80,31 @@
                             <i class="bi bi-person"></i>
                             Ingresar
                         </button>
-                        <a href="#" class="btn btn-success">Suscribite</a>  
+                        <a href="suscripcion.html" class="btn btn-success">Suscribite</a>
                     </div>
                 </div>
             </nav>
-        </header>
+        </header>    
         <main class="container">
+            <hr class="text-light"/>
+            <h1 class="text-primary text-center">Categorias</h1>
         <section>
-            <article>
-                <!-- Aqui va un banner -->
+            <article class="row">
+                <a href="#accion" class="text-decoration-none text-light col-12 col-md-4">
+                    <h2>Acción</h2>
+                </a>
+                <a href="#comedia" class="text-decoration-none text-light col-12 col-md-4">
+                    <h2>Comedia</h2>
+                </a>
+                <a href="#romanticas" class="text-decoration-none text-light col-12 col-md-4">
+                    <h2>Romanticas</h2>                
+                </a>
             </article>
         </section>
         <hr class="text-light"/>
         <section>
-            <a href="#" class="text-decoration-none text-light display-6 d-lg-inline my-5">
-                Accíon
+            <a href="#" class="text-decoration-none text-light my-5" id="accion">
+                <h2 class="d-inline">Acción</h2>
                 <i class="bi bi-arrow-right text-light fs-3"></i>
             </a>
             <article class="row">
@@ -132,8 +142,8 @@
         </section>
         <hr class="text-light"/>
         <section>
-            <a href="#" class="text-decoration-none text-light display-6 d-lg-inline my-5">
-                Comedia
+            <a href="#" class="text-decoration-none text-light my-5" id="comedia">
+                <h2 class="d-inline">Comedia</h2>
                 <i class="bi bi-arrow-right text-light fs-3"></i>
             </a>
             <article class="row">
@@ -171,8 +181,8 @@
         </section>
         <hr class="text-light"/>
         <section>
-            <a href="notFound.html" class="text-decoration-none text-light display-6 d-lg-inline my-5">
-                Romanticas
+            <a href="notFound.html" class="text-decoration-none text-light my-5" id="romanticas">
+                <h2 class="d-inline">Romanticas</h2>
                 <i class="bi bi-arrow-right text-light fs-3"></i>
             </a>
             <article class="row">
@@ -230,7 +240,7 @@
                             Ingresar
                         </a>
                         <button type="button" class="btn btn-secondary my-1" data-bs-dismiss="modal">Cancelar</button>
-                        <a href="#" class="btn btn-success my-1">Suscribite</a>
+                        <a href="suscripcion.html" class="btn btn-success my-1">Suscribite</a>
                     </div>
                   </form>
                 </div>
