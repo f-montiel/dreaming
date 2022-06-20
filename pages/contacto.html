@@ -13,7 +13,7 @@
             name="keywords"
             content="Contacto, Consultas, preguntas Frecuentes, Telefono, Dirección"
         />
-        <title>Dreaming</title>
+        <title>Contacto</title>
         <!-- CSS only -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -49,7 +49,7 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a
-                                    class="nav-link active"
+                                    class="nav-link"
                                     aria-current="page"
                                     href="../index.html"
                                     >Inicio</a
@@ -72,14 +72,15 @@
                                 placeholder="Buscar"
                                 aria-label="Search"
                             />
-                            <button class="btn btn-outline-light" type="submit">
+                            <a href="notFound.html" class="btn btn-outline-light">
                                 Buscar
-                            </button>
+                            </a>
                         </form>
                         <button type="button" class="btn btn-primary my-3 mx-lg-2" data-bs-toggle="modal" data-bs-target="#logIn">
                             <i class="bi bi-person"></i>
                             Ingresar
-                        </button> 
+                        </button>
+                        <a href="#" class="btn btn-success">Suscribite</a>
                     </div>
                 </div>
             </nav>
@@ -92,35 +93,78 @@
                     </p>
                 </article>
             </section>
-            <section class="m-3">
+            <section class="my-3">
                 <article class="row">
                     <!-- Formulario de consulta -->
                     <aside class="col-12 col-md-6">
+                        <h2 class="text-primary fs-4">Hacemos tu consulta aqui</h2>
                         <form class="form-group">
                             <label for="email" class="form-label text-light mt-1">Email</label>
                             <input type="email" name="email" id="email" class="form-control" minlength="7" maxlength="100" required placeholder="montiel.facu@gmail.com">
                             <label for="motivo" class="form-label text-light mt-1">Motivo</label>
                             <input type="text" name="motivo" id="motivo" class="form-control" minlength="5" maxlength="20" required placeholder="Metodo de Pago">
                             <label for="consulta" class="form-label text-light mt-1">Consulta</label>
-                            <textarea name="consulta" id="consulta" class="form-control" rows="6" required minlength="10" maxlength="200"></textarea>
+                            <textarea name="consulta" id="consulta" class="form-control" rows="6" required minlength="10" maxlength="200" placeholder="Escriba aqui su consulta"></textarea>
                             <button type="submit" class="btn btn-primary mt-2">Enviar</button>
                         </form>
                     </aside>
                     <!-- Preguntas frecuentes -->
-                    <aside class="col-12 col-md-6">
-
+                    <aside class="col-12 col-md-6 my-sm-3 my-md-0">
+                        <h2 class="text-primary fs-4">Preguntas Frecuentes</h2>
+                        <div class="list-group my-md-5 my-sm-3">
+                            <a href="notFound.html" class="list-group-item list-group-item-action" aria-current="true">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Nuestros Planes</h5>
+                                <small>1 día atras</small>
+                              </div>
+                              <p class="mb-1">Accede a las consultas frecuentes sobre nuestros planes.</p>
+                              <small>Planes, precios y mas</small>
+                            </a>
+                            <a href="notFound.html" class="list-group-item list-group-item-action">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Forma de pago</h5>
+                                <small class="text-muted">2 dias atras</small>
+                              </div>
+                              <p class="mb-1">Accede a las preguntas frecuentes sobre las formas de pago.</p>
+                              <small class="text-muted">Las mejores formas de pago.</small>
+                            </a>
+                            <a href="notFound.html" class="list-group-item list-group-item-action">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Servicio tecnico</h5>
+                                <small class="text-muted">3 dias atras</small>
+                              </div>
+                              <p class="mb-1">Consulta sobre nuestro servicio tecnico.</p>
+                              <small class="text-muted">El mejor servicio tecnico.</small>
+                            </a>
+                          </div>
                     </aside>
                 </article>
             </section>
+            <hr class="text-light"/>
             <section>
-                <article>
+                <article class="row">
                     <!-- Datos de la empresa -->
-                    <aside>
-
+                    <h2 class="text-primary fs-4">Informacion Util</h2>
+                    <aside class="col-12 col-md-6">
+                        <div class="card w-100 my-3">
+                            <img src="../img/contacto/oficina.jpg" class="card-img-top contactoAsideImg" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Nuestras Oficinas</h5>
+                              <p class="card-text">Salta 105,Yerba Buena, Tucumán, Argentina.</p>
+                              <p class="card-text">+54 381 5191 664</p>
+                            </div>
+                          </div>
+                          
                     </aside>
-                    <!-- Otros medios de comunicacion -->
-                    <aside>
-
+                    <aside class="col-12 col-md-6">
+                        <div class="card w-100 my-3">
+                            <img src="../img/contacto/empleados.jpg" class="card-img-top contactoAsideImg" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Nuestros equipos</h5>
+                              <p class="card-text">Dedicadoa a que tu experiencia sea unica.</p>
+                              <p class="card-text">Nuestros equipos se encuentran en todo el mundo .</p>
+                            </div>
+                          </div>
                     </aside>
                 </article>
             </section>
@@ -136,12 +180,12 @@
                       <form class="form-group">
                         <div class="mb-3">
                             <label for="user" class="form-label">Usuario</label>
-                            <input type="email" name="user" id="user" class="form-control" minlength="7" maxlength="100" placeholder="montiel.facu@gmail.com">
+                            <input type="email" name="user" id="user" class="form-control" required minlength="7" maxlength="100" placeholder="montiel.facu@gmail.com">
                             <label for="password" class="form-label">Contraseña</label>
-                            <input type="password" name="password" id="password" class="form-control" minlength="8" maxlength="100" placeholder="Minimo 8 Caracteres">
+                            <input type="password" name="password" id="password" class="form-control" required minlength="8" maxlength="100" placeholder="Minimo 8 Caracteres">
                         </div>
                         <div class="row m-3">
-                            <a href="pages/notFound.html" class="btn btn-primary my-1">
+                            <a href="notFound.html" class="btn btn-primary my-1">
                                 Ingresar
                             </a>
                             <button type="button" class="btn btn-secondary my-1" data-bs-dismiss="modal">Cancelar</button>
@@ -161,11 +205,11 @@
                         <a class="fs-3 text-danger fw-bold text-decoration-none" href="../index.html">
                             SDreaming
                         </a>
-                        <p class="text-light my-0 fs-6">El mejor streaming</p>
+                        <p class="text-primary my-0 fs-6">El mejor streaming</p>
                     </div>
                     <div class="col-12 col-md-4 text-center my-1 my-md-2">
-                        <a href="contacto.html" class="text-light text-decoration-none fw-bold d-block my-2 fs-4 align-top">Contacto</a>
-                        <a href="#" class="text-light text-decoration-none fw-bold d-block my-2 fs-4">Nosotros</a>
+                        <a href="contacto.html" class="text-primary text-decoration-none fw-bold d-block my-2 fs-4 align-top">Contacto</a>
+                        <a href="#" class="text-primary text-decoration-none fw-bold d-block my-2 fs-4">Nosotros</a>
                     </div>
                     <div class="col-12 col-md-4 my-lg-1 text-center my-1 my-md-2">
                         <div class="row text-center">
