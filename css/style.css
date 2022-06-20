@@ -43,5 +43,9 @@ main{
     .contactoAsideImg {
         max-height: 300px;
         object-fit: cover;
-    } 
+    }
+    .nosotrosImg {
+        max-height: 500px;
+        object-fit: cover;
+    }
 }
