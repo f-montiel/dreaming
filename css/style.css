@@ -5,7 +5,10 @@ main{
     z-index: 5;
 }
 
-/* hover #0a58ca */
+.selected:hover {
+    height: 101%;
+    border: 2px solid;
+}
 
 @media all and (min-width: 260px) and (max-width: 349px){
     .fixedHeight{
@@ -66,7 +69,7 @@ main{
         object-fit: cover;
     }
     video {
-        height: 550px;
+        height: 520px;
         object-fit: cover;
     }
     .contactoAsideImg {
