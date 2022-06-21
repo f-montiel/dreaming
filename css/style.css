@@ -5,6 +5,35 @@ main{
     z-index: 5;
 }
 
+/* hover #0a58ca */
+
+@media all and (min-width: 260px) and (max-width: 349px){
+    .fixedHeight{
+        height: 180px;
+        object-fit: cover;
+    }
+}
+
+@media all and (min-width: 350px) and (max-width: 419px){
+    .fixedHeight{
+        height: 230px;
+        object-fit: cover;
+    }
+}
+
+@media all and (min-width: 420px) and (max-width: 499px){
+    .fixedHeight{
+        height: 300px;
+        object-fit: cover;
+    }
+}
+@media all and (min-width: 500px) and (max-width: 575px){
+    .fixedHeight{
+        height: 350px;
+        object-fit: cover;
+    }
+}
+
 @media all and (min-width: 576px) and (max-width: 767px){
     .fixedHeight{
         height: 400px;
