@@ -33,16 +33,16 @@
                 <div class="container">
                     <a href="../index.html" class="navbar-brand text-danger fw-bold">SDreaming</a>
                     <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
                     >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                     <div
                         class="collapse navbar-collapse"
                         id="navbarSupportedContent"
@@ -62,9 +62,17 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="notFound.html">Películas</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="notFound.html">Documentales</a>
-                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="categoriaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Categorías
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="categoriaDropdown">
+                                  <li><a class="dropdown-item" href="accion.html">Acción</a></li>
+                                  <li><a class="dropdown-item" href="comedia.html">Comedia</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="categorias.html">Otras Categorías</a></li>
+                                </ul>
+                              </li>
                         </ul>
                         <form class="d-flex" role="search">
                             <input
@@ -77,33 +85,20 @@
                                 Buscar
                             </a>
                         </form>
-                        <button type="button" class="btn btn-primary my-3 mx-lg-2" data-bs-toggle="modal" data-bs-target="#logIn">
-                            <i class="bi bi-person"></i>
-                            Ingresar
-                        </button>
-                        <a href="suscripcion.html" class="btn btn-success">Suscribite</a>
+                            <button type="button" class="navbar-brand btn btn-primary my-3 mx-lg-2" data-bs-toggle="modal" data-bs-target="#logIn">
+                                <i class="bi bi-person"></i>
+                                Ingresar
+                            </button>
+                            <a href="suscripcion.html" class="navbar-brand btn btn-success">Suscribite</a>
                     </div>
                 </div>
             </nav>
-        </header>    
+        </header>        
         <main class="container">
             <h1 class="text-primary text-center">Categorias</h1>
-        <section>
-            <article class="row">
-                <a href="#accion" class="text-decoration-none text-light col-12 col-md-4">
-                    <h2>Acción</h2>
-                </a>
-                <a href="#comedia" class="text-decoration-none text-light col-12 col-md-4">
-                    <h2>Comedia</h2>
-                </a>
-                <a href="#romanticas" class="text-decoration-none text-light col-12 col-md-4">
-                    <h2>Romanticas</h2>                
-                </a>
-            </article>
-        </section>
         <hr class="text-light"/>
         <section>
-            <a href="#" class="text-decoration-none text-light my-5" id="accion">
+            <a href="accion.html" class="text-decoration-none text-light my-5" id="accion">
                 <h2 class="d-inline">Acción</h2>
                 <i class="bi bi-arrow-right text-light fs-3"></i>
             </a>
@@ -142,7 +137,7 @@
         </section>
         <hr class="text-light"/>
         <section>
-            <a href="#" class="text-decoration-none text-light my-5" id="comedia">
+            <a href="comedia.html" class="text-decoration-none text-light my-5" id="comedia">
                 <h2 class="d-inline">Comedia</h2>
                 <i class="bi bi-arrow-right text-light fs-3"></i>
             </a>

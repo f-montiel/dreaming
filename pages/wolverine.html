@@ -27,16 +27,16 @@
             <div class="container">
                 <a href="../index.html" class="navbar-brand text-danger fw-bold">SDreaming</a>
                 <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
                 >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
                 <div
                     class="collapse navbar-collapse"
                     id="navbarSupportedContent"
@@ -56,9 +56,17 @@
                         <li class="nav-item">
                             <a class="nav-link" href="notFound.html">Películas</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="notFound.html">Documentales</a>
-                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="categoriaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Categorías
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="categoriaDropdown">
+                              <li><a class="dropdown-item" href="accion.html">Acción</a></li>
+                              <li><a class="dropdown-item" href="comedia.html">Comedia</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="categorias.html">Otras Categorías</a></li>
+                            </ul>
+                          </li>
                     </ul>
                     <form class="d-flex" role="search">
                         <input
@@ -71,19 +79,19 @@
                             Buscar
                         </a>
                     </form>
-                    <button type="button" class="btn btn-primary my-3 mx-lg-2" data-bs-toggle="modal" data-bs-target="#logIn">
-                        <i class="bi bi-person"></i>
-                        Ingresar
-                    </button>
-                    <a href="suscripcion.html" class="btn btn-success">Suscribite</a>
+                        <button type="button" class="navbar-brand btn btn-primary my-3 mx-lg-2" data-bs-toggle="modal" data-bs-target="#logIn">
+                            <i class="bi bi-person"></i>
+                            Ingresar
+                        </button>
+                        <a href="suscripcion.html" class="navbar-brand btn btn-success">Suscribite</a>
                 </div>
             </div>
         </nav>
-    </header>
-    <main class="container">
+    </header>        
+        <main class="container">
         <section>
             <article>
-                <video src="../videos/wolverine.mp4" controls autobuffer width="100%"></video>
+                <video src="../videos/wolverine.mp4" autoplay controls autobuffer width="100%"></video>
                 <h1 class="text-danger text-center">The Wolverine</h1>
                 <div class="row">
                     <div class="col-12">
@@ -97,7 +105,7 @@
                         <p class="text-secondary fs-5 d-inline m-2">130 min</p>
                         <p class="text-secondary border border-1 border-secondary px-2 fs-5 d-inline m-2">+16</p>
                         <p class="text-secondary border border-1 border-secondary px-2 fs-5 d-inline m-2">Full HD</p>
-                        <a href="notFound.html" class=" d-block my-2"><i class="bi bi-play-btn fs-1"></i></a>
+                        <a href="notFound.html" class="my-2 mb-0"><i class="bi bi-play-btn fs-1"></i></a>
                     </div>
                 </div>
             </article>

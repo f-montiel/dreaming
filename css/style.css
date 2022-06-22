@@ -1,7 +1,7 @@
-main{
+main {
     margin-top: 86px;
 }
-.navbar{
+.navbar {
     z-index: 5;
 }
 
@@ -10,41 +10,41 @@ main{
     border: 2px solid;
 }
 
-@media all and (min-width: 260px) and (max-width: 349px){
-    .fixedHeight{
+@media all and (min-width: 260px) and (max-width: 349px) {
+    .fixedHeight {
         height: 180px;
         object-fit: cover;
     }
 }
 
-@media all and (min-width: 350px) and (max-width: 419px){
-    .fixedHeight{
+@media all and (min-width: 350px) and (max-width: 419px) {
+    .fixedHeight {
         height: 230px;
         object-fit: cover;
     }
 }
 
-@media all and (min-width: 420px) and (max-width: 499px){
-    .fixedHeight{
+@media all and (min-width: 420px) and (max-width: 499px) {
+    .fixedHeight {
         height: 300px;
         object-fit: cover;
     }
 }
-@media all and (min-width: 500px) and (max-width: 575px){
-    .fixedHeight{
+@media all and (min-width: 500px) and (max-width: 575px) {
+    .fixedHeight {
         height: 350px;
         object-fit: cover;
     }
 }
 
-@media all and (min-width: 576px) and (max-width: 767px){
-    .fixedHeight{
+@media all and (min-width: 576px) and (max-width: 767px) {
+    .fixedHeight {
         height: 400px;
         object-fit: cover;
     }
 }
-@media all and (min-width: 768px) and (max-width: 991px){
-    .fixedHeight{
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .fixedHeight {
         height: 350px;
         object-fit: cover;
     }
@@ -52,9 +52,9 @@ main{
         max-height: 192px;
         object-fit: cover;
     }
-} 
+}
 @media all and (min-width: 992px) and (max-width: 1200px) {
-    .fixedHeight{
+    .fixedHeight {
         height: 200px;
         object-fit: cover;
     }
@@ -63,8 +63,8 @@ main{
         object-fit: cover;
     }
 }
-@media all and (min-width: 1201px){
-    .fixedHeight{
+@media all and (min-width: 1201px) {
+    .fixedHeight {
         height: 270px;
         object-fit: cover;
     }
